@@ -311,7 +311,6 @@ h4 {
   width:63.5%;
   height:100%;
   float:right;
-  bottom: 0;
   // display:flex;
   // flex-direction:column;
   .experience {

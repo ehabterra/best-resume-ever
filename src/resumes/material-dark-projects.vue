@@ -84,7 +84,7 @@
           <span>{{skill.name}}</span>
           <div class="progress">
             <div class="determinate" :style="'width: '+skill.level+'%;'">
-              <i class="fa fa-circle"></i>
+              <!-- <i class="fa fa-circle"></i> -->
             </div>
           </div>
         </div>
@@ -535,7 +535,7 @@ h4 {
     }
 }
 #myselfpic {
-    background-image: url('../../resume/id.jpg');
+    background-image: url('../../resume/id.png');
     color: black;
 }
 #githubIcon {

@@ -2,7 +2,10 @@
 <div class="resume">
   <div class="leftCol m_box">
     <div class="shadow"></div>
-    <div class="heading" id="myselfpic">
+    <div class="heading">
+      <div class="image-background">
+       <div id="myselfpic"></div>
+      </div>
     </div>
     <div class="section-headline">
       {{ lang.contact }}
@@ -13,7 +16,7 @@
       </div>
       <div class="text">
         <ul>
-          <li> {{ lang.born }} {{person.birth.year}} {{ lang.bornIn }} {{person.birth.location}}</li>
+          <li> {{ lang.born }} {{person.birth.year}}</li>
         </ul>
       </div>
     </div>
@@ -84,7 +87,7 @@
           <span>{{skill.name}}&nbsp;</span>
           <div class="progress">
             <div class="determinate" :style="'width: '+skill.level+'%;'">
-              <i class="fa fa-circle"></i>
+              <!-- <i class="fa fa-circle"></i> -->
             </div>
           </div>
         </div>
@@ -163,7 +166,7 @@ a {
   }
 }
 .description-personal {
-  margin-left:20px;
+  margin-left:10px;
   margin-top:20px;
   padding-right:40px;
   text-align:justify;
@@ -171,7 +174,7 @@ a {
 }
 .title {
   right:25px;
-  padding-left:20px;
+  padding-left:10px;
   padding-top:10px;
   bottom:25px;
   h2 {
@@ -186,7 +189,7 @@ a {
     color:rgba(0,0,0,0.7);
     padding-top:0;
     margin-top:0;
-    letter-spacing:10px;
+    letter-spacing:5px;
     font-weight:400;
   }
   div {
@@ -223,7 +226,7 @@ a {
   letter-spacing:3px;
   font-size:10pt;
   opacity:0.8;
-  margin-left:20px;
+  margin-left:10px;
   margin-top:12px;
   margin-bottom:6px;
   color:#3f3d3c;
@@ -288,26 +291,27 @@ h4 {
   display:flex;
   flex-direction:column;
   .experience {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .about {
     display: block;
-    margin-top:8px !important;
+    margin-right:10px;
     font-weight:375;
-    font-size: 16px;
+    font-size: 15px;
     color:rgba(0,0,0,0.541176);
+    text-align: justify;
   }
   .block {
     width:90%;
     position:relative;
     background-color:#ffffff;
-    padding:20px;
-    margin-top:5px;
+    padding:12px;
+    // margin-top:5px;
     margin-bottom:5px;
     display:inline-block;
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     .headline {
-      font-weight:300;
+      font-weight:400;
       display:block;
       font-size:15px;
       color:rgba(0,0,0,0.870588);
@@ -322,7 +326,7 @@ h4 {
       font-size:14px;
       color:rgba(0,0,0,0.870588);
       margin-bottom:0;
-      padding-top:20px;
+      padding-top:3px;
     }
     .icon {
       width:16%;
@@ -388,7 +392,7 @@ h4 {
     text-decoration:none;
   }
   .heading {
-    background-color:white;
+    // background-color:white;
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -429,7 +433,7 @@ h4 {
     .skill {
       clear:both;
       width:97%;
-      padding-top:4px;
+      // padding-top:4px;
       span {
         font-size: 13px;
       }
@@ -448,7 +452,7 @@ h4 {
         .progress {
           float:left;
           position:relative;
-          height:2px;
+          height:8px;
           display:block;
           width:95%;
           background-color:rgba(255,255,255,0.19);
@@ -486,8 +490,23 @@ h4 {
   }
 }
 #myselfpic {
-  background-image:url('../../resume/id.jpg');
-  color:black;
+  background-image:url('../../resume/id.png');
+  height: 160px;
+  margin: 12px 0 0 130px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  border-radius: 100px;
+  border: 8px solid #c4c4c4;
+  width: 160px;
+}
+.image-background {
+  width: 320px;
+  height: 200px;
+  background-color: #78909c;
+  margin: 50px 0 0 -100px;
+  border-radius: 100px;
+  display: inline-block;
 }
 #githubIcon {
   width:25px;

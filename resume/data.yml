@@ -1,64 +1,85 @@
 /* #*/ export const PERSON = `
 name:
-  first: John
-  middle:
-  last: Doe
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Software Developer
+  first: Ehab
+  middle: Mohamed ElSayed
+  last: Terra
+about: I have more than 12 years of experience in software development, I involved in the full-stack development of web applications using C#, NodeJs, Golang,...etc for the back-end and AngularJS for the front-end. Beside that, I was publishing researches in the topics of text clustering and feature selection mainly using R as a part of the Master Degree.
+position: Senior Software developer and AI Engineer
 
 birth:
-  year: 1990
-  location: New York
+  year: 1984
+  location: Yemen
 
 experience:
-- company: Company A
+- company: Freelancing
+  position: Senior Developer
+  timeperiod: since April 2020
+  description: Using Golang and Elasticsearch to build insight website. Also, involved in other projects using C#, Angular 8, NodeJS, Typescript and ElectronJS. 
+
+- company: Ignite (Remote – Netherlands)
+  position: Senior Software Developer
+  timeperiod: October 2016 - December 2019
+  description: Build new features and maintenance websites, services and tools for job vacancies websites in Netherlands and other countries.
+
+- company: Comex
+  position: Senior Software Developer
+  timeperiod: October 2014 - October 2016
+  description: Responsible for building a web application for reporting, sales, purchases, warehouses, and real estate.
+
+- company: Hindawi
+  position: Senior Software Developer
+  timeperiod: November 2012 - October 2014
+  description: Responsible for Back office website for publishing books and articles.
+  website: https://www.hindawi.org
+
+- company: MENA Software (Remote – Bulgaria)
+  position: Senior Software Developer
+  timeperiod: February 2012 - November 2012
+  description: Developing Games Portals, Administrations and Gates websites.
+  website: https://gamgos.com
+
+- company: TeBAS, True Technology
   position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
-  website: https://example.com
-
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
-
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+  timeperiod: 2004 - 2009
+  description: Developed a web and desktop applications for Personnel (HR, Time Attendance, Payroll), Hospital, POS and Restaurant.
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-  website: https://example.com
+- degree: Master of Computer Science
+  timeperiod: October 2014 - November 2020
+  description: Major in Text Clustering and Data Mining, Cairo University.
+  website: https://doi.org/10.1007/978-3-030-31129-2_64
 
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+- degree: Higher Diploma
+  timeperiod: 2009 - 2011
+  description: Major in Computer Science, Cairo University.
+  website: https://issr.cu.edu.eg
+
+- degree: Bachelor of Commerce
+  timeperiod: 2002 - 2006
+  description: Major in Accounting, Ain Shams University.
 
 # skill level goes 0 to 100
 skills:
-- name: HTML5
-  level: 99
-- name: CSS3
-  level: 95
-- name: JavaScript
-  level: 97
-- name: Node.js
-  level: 93
-- name: Angular 2
-  level: 60
-- name: TypeScript
+- name: R language
   level: 80
-- name: ES.Next
+- name: Python, Numpy, Pandas, matplotlib, PS4
   level: 70
-- name: Docker
-  level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+- name: Apache Spark
+  level: 40
+- name: Hadoop
+  level: 30
+- name: Elastic search
+  level: 90
+- name: HTML, CSS3 and JavaScript
+  level: 90
+- name: Node.js and TypeScript
+  level: 75
+- name: Golang
+  level: 75
+- name: C#
+  level: 80
+knowledge: Also proficient in SQL Server, Angular 8, Latex, and Docker, grew up bilingual
+  (Arabic and English).
 
 projects:
 - name: best-resume-ever
@@ -77,17 +98,17 @@ hobbies:
   url: https://example.com
 
 contributions:
-- name: best-resume-ever
+- name: dynamic entity framework
   description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
   url: https://github.com/salomonelli/best-resume-ever
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
+  email: ehabterra@hotmail.com
+  phone: +20 106 122 7558
+  street: 3rd district 4th Area
+  city: 6 of October
+  website: https://www.linkedin.com/in/ehab-terra-271b3a23/
+  github: ehabterra
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
 lang: en
 `

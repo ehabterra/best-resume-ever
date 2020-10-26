@@ -218,7 +218,7 @@ export default Vue.component(name, getVueOptions(name));
   width: @picture-size;
   border-radius: 50%;
   border: 5px solid @accent-color;
-  content: url('../../resume/id.jpg');
+  content: url('../../resume/id.png');
   z-index: 2;
 }
 

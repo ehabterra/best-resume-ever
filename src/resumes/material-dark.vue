@@ -66,6 +66,17 @@
         </div>
       </div>
     </a>
+            
+    <a v-if="person.contact.linkedin" :href="person.contact.linkedin" target="_blank">
+      <div class="item">
+        <div class="icon">
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <div class="text">
+          <span>{{person.contact.linkedin}}</span>
+        </div>
+      </div>
+    </a>
 
     <a v-if="person.contact.website" :href="person.contact.website" target="_blank">
       <div class="item">
@@ -82,7 +93,7 @@
       <div class="section-headline">
         {{ lang.skills }}
       </div>
-      <div class="skill" v-for="skill in person.skills" :key="skill.name">
+      <div class="skill" v-for="skill in person.skills" :key="skill.name" :class="skill.name == 'Golang'? 'breaking': ''">
         <div class="right">
           <span>{{skill.name}}&nbsp;</span>
           <div class="progress">
@@ -93,7 +104,6 @@
         </div>
       </div>
     </div>
-
     <div class="item last">
       <div v-if="person.knowledge" class="section-headline">
         {{ lang.additionalSkills }}
@@ -113,8 +123,19 @@
       <span class="about">{{person.about}}</span>
     </div>
 
-    <div class="section-headline experience">{{ lang.experience }}</div>
-    <div class="block" v-for="experience in person.experience" :key="experience.company">
+    <div class="section-headline experience">{{ lang.publication }}</div>
+    <div class="block" v-for="publication in person.publication" :key="publication.description">
+      <a
+      :href="publication.website">
+        <div class="block-helper"></div>
+          <p style="padding-top:0" class="info">
+            {{publication.description}}
+          </p>  
+      </a>
+    </div>
+
+    <div class="section-headline">{{ lang.experience }}</div>
+    <div class="block" v-for="experience in person.experience" :key="experience.company" :class="experience.company == 'Hindawi'? 'breaking': ''">
       <a
       :href="experience.website">
         <div class="block-helper"></div>
@@ -138,7 +159,7 @@
     </div>
   </div>
 
-  <div style="clear:both;"></div>
+  <!-- <div style="clear:both;"></div> -->
 </div>
 </template>
 
@@ -155,6 +176,8 @@ export default Vue.component(name, getVueOptions(name));
 .resume {
   font-family:'Roboto' !important;
   background:#cccccc;
+  height: 100%;
+  // padding-bottom: 100%;
 }
 a {
   color: inherit;
@@ -288,16 +311,16 @@ h4 {
   width:63.5%;
   height:100%;
   float:right;
-  display:flex;
-  flex-direction:column;
+  // display:flex;
+  // flex-direction:column;
   .experience {
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .about {
     display: block;
     margin-right:10px;
     font-weight:375;
-    font-size: 15px;
+    font-size: 16px;
     color:rgba(0,0,0,0.541176);
     text-align: justify;
   }
@@ -305,8 +328,8 @@ h4 {
     width:90%;
     position:relative;
     background-color:#ffffff;
-    padding:12px;
-    // margin-top:5px;
+    padding:20px;
+    margin-top:5px;
     margin-bottom:5px;
     display:inline-block;
     box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
@@ -326,7 +349,7 @@ h4 {
       font-size:14px;
       color:rgba(0,0,0,0.870588);
       margin-bottom:0;
-      padding-top:3px;
+      padding-top:20px;
     }
     .icon {
       width:16%;
@@ -433,7 +456,7 @@ h4 {
     .skill {
       clear:both;
       width:97%;
-      // padding-top:4px;
+      padding-top:4px;
       span {
         font-size: 13px;
       }
@@ -479,9 +502,11 @@ h4 {
     }
   }
   .item.last{ 
+    padding-bottom: 100%;    
+
     .text {
       border-bottom-style:none;
-      padding-bottom:0;
+      // padding-bottom:0;
     }
 
     .section-headline {
@@ -511,5 +536,15 @@ h4 {
 #githubIcon {
   width:25px;
   padding-left:17px;
+}
+
+.breaking {
+  margin-top: 50px !important;
+  page-break-before:always;
+
+}
+
+.last-left {
+  padding-bottom: 100%;
 }
 </style>

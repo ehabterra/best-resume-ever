@@ -59,10 +59,10 @@ const convert = async () => {
                 args: ['--no-sandbox']
             });
             const page = await browser.newPage();
+            
             await page.goto(`http://localhost:${config.dev.port}/#/resume/` + dir.name, {
                 waitUntil: 'networkidle2'
             });
-
             if (
                 !fs.existsSync(fullDirectoryPath)
             ) {

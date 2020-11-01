@@ -3,8 +3,8 @@ name:
   first: Ehab
   middle: Mohamed ElSayed
   last: Terra
-about: I have more than 12 years of experience in software development, I involved in the full-stack development of web applications using C#, NodeJs, Golang,...etc for the back-end and AngularJS for the front-end. Beside that, I was publishing researches in the topics of text clustering and feature selection mainly using R as a part of the Master Degree.
-position: Senior Software developer and AI Engineer
+about: I have more than 12 years of experience in software development. I published researches in the topics of text clustering and feature selection most of code was writen in R language, as a part of MS.c. in Computer Science. I involved also in the full-stack development of web applications using C#, NodeJs, Golang,...etc for the back-end and AngularJS or VueJS for the front-end.
+position: Data Scientist and Software Developer
 
 birth:
   year: 1984
@@ -38,16 +38,27 @@ experience:
   description: Developing Games Portals, Administrations and Gates websites.
   website: https://gamgos.com
 
-- company: TeBAS, True Technology
-  position: Developer
-  timeperiod: 2004 - 2009
-  description: Developed a web and desktop applications for Personnel (HR, Time Attendance, Payroll), Hospital, POS and Restaurant.
+- company: TeBAS
+  position: Senior Developer
+  timeperiod: 2007 - 2009
+  description: Developed a web and desktop applications for Personnel (HR, Time Attendance, Payroll).
+
+- company: True Technology
+  position: Junior Developer
+  timeperiod: 2004 - 2007
+  description: Developed a desktop applications for Hospital, POS and Restaurant.
+
+publication:
+- description: 'Terra, Ehab, Ammar Mohammed, and Hesham A. Hefny. "GloSOPHIA: An Enhanced Textual Based clustering Approach by Word Embeddings." In International Conference on Advanced Intelligent Systems and Informatics, pp. 700-710. Springer, Cham, 2019.'
+  website: https://doi.org/10.1007/978-3-030-31129-2_64
+
+- description: 'Terra, Ehab, Ammar Mohammed, and Hesham A. Hefny. "An Approach for Textual Based Clustering Using Word Embedding." in Machine Learning and Big Data Analytics Paradigms: Analysis, Applications and Challenges, Springer, 2020. Manuscript is in production.'
 
 education:
 - degree: Master of Computer Science
   timeperiod: October 2014 - November 2020
   description: Major in Text Clustering and Data Mining, Cairo University.
-  website: https://doi.org/10.1007/978-3-030-31129-2_64
+  website: https://issr.cu.edu.eg
 
 - degree: Higher Diploma
   timeperiod: 2009 - 2011
@@ -62,13 +73,15 @@ education:
 skills:
 - name: R language
   level: 80
-- name: Python, Numpy, Pandas, matplotlib, PS4
+- name: Python, FastAPI, PS4
+  level: 70
+- name: Numpy, Pandas, Matplotlib, Scikit-learn
   level: 70
 - name: Apache Spark
   level: 40
 - name: Hadoop
   level: 30
-- name: Elastic search
+- name: Elasticsearch and Kibana
   level: 90
 - name: HTML, CSS3 and JavaScript
   level: 90
@@ -78,6 +91,12 @@ skills:
   level: 75
 - name: C#
   level: 80
+- name: Redis
+  level: 70
+- name: Git, Github, Bitbucket
+  level: 70
+- name: CI/CD DevOps
+  level: 50
 knowledge: Also proficient in SQL Server, Angular 8, Latex, and Docker, grew up bilingual
   (Arabic and English).
 
@@ -107,7 +126,7 @@ contact:
   phone: +20 106 122 7558
   street: 3rd district 4th Area
   city: 6 of October
-  website: https://www.linkedin.com/in/ehab-terra-271b3a23/
+  linkedin: https://www.linkedin.com/in/ehab-terra-271b3a23/
   github: ehabterra
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el, nb-no
 lang: en

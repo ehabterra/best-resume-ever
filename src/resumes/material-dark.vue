@@ -93,7 +93,7 @@
       <div class="section-headline">
         {{ lang.skills }}
       </div>
-      <div class="skill" v-for="skill in person.skills" :key="skill.name" :class="skill.name == 'Golang'? 'breaking': ''">
+      <div class="skill" v-for="skill in person.skills" :key="skill.name" :class="skill.break? 'breaking': ''">
         <div class="right">
           <span>{{skill.name}}&nbsp;</span>
           <div class="progress">
@@ -104,7 +104,7 @@
         </div>
       </div>
     </div>
-    <div class="item last">
+    <div class="item knowledge">
       <div v-if="person.knowledge" class="section-headline">
         {{ lang.additionalSkills }}
       </div>
@@ -114,6 +114,17 @@
         </div>
       </div>
     </div>
+    <div class="item">
+      <div class="section-headline">
+        {{ lang.language }}
+      </div>
+      <div class="skill" v-for="language in person.languages" :key="language.name" :class="language.break? 'breaking': ''">
+        <div class="right">
+          <span>{{language.name}}:&nbsp;</span>
+          <span>{{language.level}}</span>
+        </div>
+      </div>
+    </div>    
   </div>
 
   <div class="rightCol">
@@ -141,8 +152,7 @@
         <div class="block-helper"></div>
         <h3 class="headline">{{experience.position}} - {{experience.company}}</h3>
           <div class="subheadline">{{experience.timeperiod}}</div>
-          <p class="info">
-            {{experience.description}}
+          <p class="info" v-html="experience.description">
           </p>  
       </a>
     </div>
@@ -501,8 +511,8 @@ h4 {
       }
     }
   }
-  .item.last{ 
-    padding-bottom: 100%;    
+  .item.knowledge{ 
+    // padding-bottom: 100%;    
 
     .text {
       border-bottom-style:none;

@@ -3,8 +3,8 @@ name:
   first: Ehab
   middle: Mohamed ElSayed
   last: Terra
-about: I have more than 12 years of experience in software development. I published researches in the topics of text clustering and feature selection most of code was writen in R language, as a part of MS.c. in Computer Science. I involved also in the full-stack development of web applications using C#, NodeJs, Golang,...etc for the back-end and AngularJS or VueJS for the front-end.
-position: Data Scientist and Software Developer
+about: I have more than 12 years of experience in software development. I have published research papers in the field of text clustering and feature selection most of code was written in R language, as a part of MS.c. degree in Computer Science. I have also involved in the full-stack development of web applications using C#, NodeJs and Golang,...etc for the back-end and Angular, VueJS and ReactJs for the front-end.
+position: Data Scientist and Senior Software Developer
 
 birth:
   year: 1984
@@ -13,8 +13,8 @@ birth:
 experience:
 - company: Freelancing
   position: Senior Developer
-  timeperiod: since April 2020
-  description: Using Golang and Elasticsearch to build insight website. Also, involved in other projects using C#, Angular 8, NodeJS, Typescript and ElectronJS. 
+  timeperiod: Since April 2020
+  description: Using ReactJs, Golang, GraphQL and Postgesql to build cost control, and using Elasticsearch for insight and reporting website, added custom feature to the backend (Golang) of <a href="https://github.com/syncthing/syncthing">Syncthing</a>. Also, involved in other projects using C#, Angular 8, NodeJS, Typescript and ElectronJS. 
 
 - company: Ignite (Remote – Netherlands)
   position: Senior Software Developer
@@ -52,7 +52,8 @@ publication:
 - description: 'Terra, Ehab, Ammar Mohammed, and Hesham A. Hefny. "GloSOPHIA: An Enhanced Textual Based clustering Approach by Word Embeddings." In International Conference on Advanced Intelligent Systems and Informatics, pp. 700-710. Springer, Cham, 2019.'
   website: https://doi.org/10.1007/978-3-030-31129-2_64
 
-- description: 'Terra, Ehab, Ammar Mohammed, and Hesham A. Hefny. "An Approach for Textual Based Clustering Using Word Embedding." in Machine Learning and Big Data Analytics Paradigms: Analysis, Applications and Challenges, Springer, 2020. Manuscript is in production.'
+- description: 'Terra, Ehab, Ammar Mohammed, and Hesham A. Hefny. "An Approach for Textual Based Clustering Using Word Embedding." in Machine Learning and Big Data Analytics Paradigms: Analysis, Applications and Challenges, pp. 261-280. Springer, Cham, 2021.'
+  website: https://doi.org/10.1007/978-3-030-59338-4_14
 
 education:
 - degree: Master of Computer Science
@@ -71,24 +72,23 @@ education:
 
 # skill level goes 0 to 100
 skills:
-- name: R language
-  level: 80
-- name: Python, FastAPI, PS4
-  level: 70
-- name: Numpy, Pandas, Matplotlib, Scikit-learn
-  level: 70
-- name: Apache Spark
-  level: 40
-- name: Hadoop
-  level: 30
+- name: Golang
+  level: 90
 - name: Elasticsearch and Kibana
   level: 90
 - name: HTML, CSS3 and JavaScript
   level: 90
-- name: Node.js and TypeScript
+- name: NodeJs and TypeScript
   level: 75
-- name: Golang
+- name: R language
   level: 75
+- name: Python, FastAPI, BS4
+  level: 70
+- name: Numpy, Pandas, Matplotlib, Scikit-learn
+  level: 70 
+- name: Apache Spark
+  level: 30
+  break: true 
 - name: C#
   level: 80
 - name: Redis
@@ -97,8 +97,15 @@ skills:
   level: 70
 - name: CI/CD DevOps
   level: 50
-knowledge: Also proficient in SQL Server, Angular 8, Latex, and Docker, grew up bilingual
-  (Arabic and English).
+knowledge: Also proficient in SQL Server, Angular 8, Latex, Docker, GraphQL, Linux (Ubuntu) ..etc.
+
+
+languages:
+  - name: Arabic
+    level: Native
+  - name: English
+    level: Conversational
+
 
 projects:
 - name: best-resume-ever

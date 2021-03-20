@@ -4,7 +4,7 @@ name:
   middle: Mohamed ElSayed
   last: Terra
 about: I have more than 12 years of experience in software development. I have published research papers in the field of text clustering and feature selection most of code was written in R language, as a part of MS.c. degree in Computer Science. I have also involved in the full-stack development of web applications using C#, NodeJs and Golang,...etc for the back-end and Angular, VueJS and ReactJs for the front-end.
-position: Data Scientist and Senior Software Developer
+position: Senior Software Developer
 
 birth:
   year: 1984
@@ -80,24 +80,11 @@ skills:
   level: 90
 - name: NodeJs and TypeScript
   level: 75
-- name: R language
-  level: 75
-- name: Python, FastAPI, BS4
-  level: 70
-- name: Numpy, Pandas, Matplotlib, Scikit-learn
-  level: 70 
-- name: Apache Spark
-  level: 30
-  break: true 
 - name: C#
   level: 80
-- name: Redis
-  level: 70
 - name: Git, Github, Bitbucket
   level: 70
-- name: CI/CD DevOps
-  level: 50
-knowledge: Also proficient in SQL Server, Angular 8, Latex, Docker, GraphQL, Linux (Ubuntu) ..etc.
+knowledge: Also proficient in SQL Server, Angular 8, Docker, GraphQL, Linux (Ubuntu 18.04) ..etc.
 
 
 languages:
